@@ -39,5 +39,15 @@
 
 ########
 *.tlog
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.recipe
+*.ilk
+*.log
+*.pdb
+*.txt
+*.idb
 
 # End of https://www.toptal.com/developers/gitignore/api/c++
