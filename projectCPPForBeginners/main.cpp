@@ -1,24 +1,18 @@
 #include <iostream>
+#include <cmath> // To use manth functions
 
 using namespace std;
 
 int main() {
 
-	//===========================================
-	cout << "Girraf Academy \n"; // using \n
-	cout << "Hello" << endl;
-
-	//===========================================
-	string phrase = "Hello Daniel";
-	cout << phrase << endl; // Hello Daniel
-	cout << phrase.length() << endl; // 12
-	cout << phrase[6] << endl; // D
-	phrase[6] = 'C';
-	cout << phrase << endl; // Hello Caniel
-	cout << phrase.find("Caniel", 0) << endl; // 6 // find recibe 2 argumentos
-	string subString = phrase.substr(6, 11);
-	cout << subString; // Caniel
-
-
+	cout << pow(2, 3) << endl; // 8
+	cout << sqrt(81) << endl; // 9
+	cout << round(4.3) << endl; // 4
+	cout << round(4.6) << endl; // 5
+	cout << ceil(4.6) << endl; // 5
+	cout << ceil(4.1) << endl; // 5
+	cout << floor(4.8) << endl; // 4
+	cout << fmax(3, 10); // 10
+ 
 	return 0;
 }
