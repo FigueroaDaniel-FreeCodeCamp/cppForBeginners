@@ -4,13 +4,19 @@
 using namespace std;
 
 int main() {
+	
+	string color, pluralNoun, celebrity;
 
-	double num1, num2;
-	cout << "Enter first number: ";
-	cin >> num1;
-	cout << "Enter second number: ";
-	cin >> num2;
-	cout << num1 + num2;
+	cout << "Enter a color: ";
+	getline(cin, color);
+	cout << "Enter a plutal Noun: ";
+	getline(cin, pluralNoun);
+	cout << "Enter a celerbity: ";
+	getline(cin, celebrity);
+
+	cout << "Roses are " << color << endl;
+	cout << pluralNoun << " are blue" << endl;
+	cout << "I love " << celebrity << endl;
 
 	return 0;
 }
