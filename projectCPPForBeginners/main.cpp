@@ -2,16 +2,14 @@
 
 using namespace std;
 
-void sayHi(string name, int age);
+double cube(double num) {
+	return num * num * num;
+}
 
 int main() {
 	
-	sayHi("Daniel", 30);
-	sayHi("Ange", 33);
+	cout << cube(5.0);
 
 	return 0;
 }
 
-void sayHi(string name, int age) {
-	cout << "Hello " << name << " you are " << age << endl;
-}
