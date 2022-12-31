@@ -1,13 +1,17 @@
 #include <iostream>
-#include <string> // To use getline
 
 using namespace std;
 
+void sayHi(string name, int age);
+
 int main() {
 	
-	int luckyNums[20] = { 5, 8, 15, 17, 23 };
-	luckyNums[10] = 100;
-	cout << luckyNums[10];
+	sayHi("Daniel", 30);
+	sayHi("Ange", 33);
 
 	return 0;
+}
+
+void sayHi(string name, int age) {
+	cout << "Hello " << name << " you are " << age << endl;
 }
