@@ -3,25 +3,10 @@
 using namespace std;
 
 int main() {
-	int secretNumber = 7;
-	int guess{};
-	int guessCount = 0;
-	int guessLimit = 3;
-	bool outOfGuesses = false;
-
-	while (secretNumber != guess && !outOfGuesses) {
-		if (guessCount < guessLimit) {
-			cout << "Enter guess: ";
-			cin >> guess;
-			guessCount++;
-		} else {
-			outOfGuesses = true;
-		}
-	}
-	if (outOfGuesses) {
-		cout << "You Lose!";
-	} else {
-		cout << "You Win!";
+	
+	int nums[] = { 2, 0, 4, 8, 7 };
+	for (int i = 0; i < 5; i++) {
+		cout << nums[i] << endl;
 	}
 
 	return 0;
