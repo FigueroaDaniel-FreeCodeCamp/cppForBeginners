@@ -2,40 +2,19 @@
 
 using namespace std;
 
-string getDayOfWeek(int dayNum) {
-	string dayName;
-
-	switch (dayNum) {
-	case 0:
-		dayName = "Sunday";
-		break;
-	case 1:
-		dayName = "Monday";
-		break;
-	case 2:
-		dayName = "Tuesday";
-		break;
-	case 3:
-		dayName = "Wednesday";
-		break;
-	case 4:
-		dayName = "Thursday";
-		break;
-	case 5:
-		dayName = "Friday";
-		break;
-	case 6:
-		dayName = "Satuday";
-		break;
-	default:
-		dayName = "Invalid Day Number";
-	}
-	return dayName;
-}
-
 int main() {
 	
-	cout << getDayOfWeek(2);
+	int index = 1;
+	while (index <= 5) {
+		cout << index << endl;
+		index++;
+	}
+
+	// Do-While loop
+	/* do {
+		cout << index << endl;
+		index++;
+	 } while (index <= 5);*/
 
 	return 0;
 }
