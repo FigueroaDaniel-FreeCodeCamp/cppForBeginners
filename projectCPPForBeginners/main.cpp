@@ -3,18 +3,26 @@
 using namespace std;
 
 int main() {
-	
-	int index = 1;
-	while (index <= 5) {
-		cout << index << endl;
-		index++;
-	}
+	int secretNumber = 7;
+	int guess{};
+	int guessCount = 0;
+	int guessLimit = 3;
+	bool outOfGuesses = false;
 
-	// Do-While loop
-	/* do {
-		cout << index << endl;
-		index++;
-	 } while (index <= 5);*/
+	while (secretNumber != guess && !outOfGuesses) {
+		if (guessCount < guessLimit) {
+			cout << "Enter guess: ";
+			cin >> guess;
+			guessCount++;
+		} else {
+			outOfGuesses = true;
+		}
+	}
+	if (outOfGuesses) {
+		cout << "You Lose!";
+	} else {
+		cout << "You Win!";
+	}
 
 	return 0;
 }
