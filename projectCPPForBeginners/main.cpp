@@ -4,18 +4,20 @@ using namespace std;
 
 int main() {
 	
-	int numberGrid[3][2] = {
-		{1, 2},
-		{3, 4},
-		{5, 6}
-	};
+	int age = 19;
+	int* pAge = &age;
+	double gpa = 2.7;
+	double* pGpa = &gpa;
+	string name = "Mike";
+	string* pName = &name;
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 2; j++) {
-			cout << numberGrid[i][j];
-		}
-		cout << endl;
-	}
+	cout << pAge << endl;
+	cout << *pAge << endl;
+
+	cout << "Age: " << &age << endl;
+	cout << "Gpa: " << &gpa << endl;
+	cout << "Name: " << &name << endl;
+
 
 	return 0;
 }
