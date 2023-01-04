@@ -2,22 +2,21 @@
 
 using namespace std;
 
+class Book {
+public:
+	string title;
+	string author;
+	int pages;
+};
+
 int main() {
 	
-	int age = 19;
-	int* pAge = &age;
-	double gpa = 2.7;
-	double* pGpa = &gpa;
-	string name = "Mike";
-	string* pName = &name;
+	Book book1;
+	book1.title = "Harry Potter";
+	book1.author = "JK Rowling";
+	book1.pages = 500;
 
-	cout << pAge << endl;
-	cout << *pAge << endl;
-
-	cout << "Age: " << &age << endl;
-	cout << "Gpa: " << &gpa << endl;
-	cout << "Name: " << &name << endl;
-
+	cout << book1.title;
 
 	return 0;
 }
