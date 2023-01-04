@@ -2,32 +2,35 @@
 
 using namespace std;
 
-class Book {
+class Movie {
+private:
+	string rating;
 public:
 	string title;
-	string author;
-	int pages;
-
-	Book() {
-		title = "no title";
-		author = "no author";
-		pages = 0;
-	}
-	Book(string aTitle, string aAuthor, int aPages) {
+	string director;
+	Movie(string aTitle, string aDirector, string aRating) {
 		title = aTitle;
-		author = aAuthor;
-		pages = aPages;
+		director = aDirector;
+		setRating(aRating);
+	}
+
+	void setRating(string aRating) {
+		if (aRating == "G" || aRating == "PG" || aRating == "PG-13" || aRating == "R" || aRating == "NR") {
+			rating = aRating;
+		} else {
+			rating = "NR";
+		}
+	}
+	string getRatig() {
+		return rating;
 	}
 };
 
 int main() {
 	
-	Book book1("Harry Potter", "JK Rowling", 500);
-	Book book2("The Lord of the Rings", "Tolkein", 900);
-	Book book3;
+	Movie avengers("The Avengers", "Joss Whedon", "PG-13");
 
-	cout << book1.title << endl;
-	cout << book3.title << endl;
+	cout << avengers.getRatig();
 
 	return 0;
 }
